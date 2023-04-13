@@ -22,8 +22,8 @@ jobs:
       - name: Download yt
         run: wget 'https://www.dropbox.com/s/9gmfqw5d86qmxbw/yt.apk?dl=0'
 
-      - name: list files
-        run: ls -lah
+      - name: rename
+        run: mv 'yt.apk?dl=0' yt.apk
 
       - name: Permission setup
         run: chmod +x cmd.sh
